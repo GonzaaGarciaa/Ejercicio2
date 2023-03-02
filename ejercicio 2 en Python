@@ -1,0 +1,58 @@
+# Ejercicio 1
+
+numeroif = 1
+
+if numeroif >= 1:
+    print("Es positivo")
+elif numeroif < 0:
+    print("Es negativo")
+else:
+    print("Es 0")
+
+# Ejercicio 2
+
+numerowhile = 0
+
+while numerowhile < 3:
+    numerowhile +=1
+    print(numerowhile)
+    
+# Ejercicio 3
+
+palabra_secreta = "gonzalo"
+numerowhile = 0
+
+while True:
+    palabra = input("Ingrese la palabra secreta: ").lower()
+    numerowhile +=1
+    
+    if palabra == palabra_secreta:
+        break
+    elif palabra != palabra_secreta and numerowhile > 7:
+        break
+    
+print(numerowhile)
+
+# Ejercicio 4
+
+for numeroFor in range(10):
+    numeroFor + 1
+    if numeroFor >= 3:
+        break
+    print(numeroFor)
+
+# Ejercicio 5
+
+estacion = "Verano"
+
+match estacion:
+    case "Verano":
+        print("Es verano")
+    case "invierno":
+        print("Es invierno")
+    case "primavera":
+        print("Es primavera")
+    case "otoño":
+        print("Es otoño")
+    case _:
+        print("Eso no es una estacion")
